@@ -1,0 +1,114 @@
+{
+    "name": "Mini_Oscilloscope",
+    "target": "Debug",
+    "toolchain": "GCC",
+    "toolchainLocation": "C:\\Users\\chi62\\.eide\\tools\\gcc_arm",
+    "toolchainCfgFile": "c:\\Users\\chi62\\.vscode\\extensions\\cl.eide-3.23.1\\res\\data\\models/arm.gcc.model.json",
+    "buildMode": "fast|multhread",
+    "showRepathOnLog": true,
+    "threadNum": 20,
+    "rootDir": "d:\\01_EGGER\\program\\STM32Project\\Mini_Oscilloscope",
+    "dumpPath": "build\\Debug",
+    "outDir": "build\\Debug",
+    "incDirs": [
+        "src",
+        "lib/cmsis",
+        "hal/STM32F10x_StdPeriph_Driver",
+        "hal/STM32F10x_StdPeriph_Driver/inc",
+        "hal/STM32F10x_StdPeriph_Driver/src"
+    ],
+    "libDirs": [],
+    "defines": [
+        "USE_STDPERIPH_DRIVER",
+        "STM32F10X_MD"
+    ],
+    "sourceList": [
+        "hal/STM32F10x_StdPeriph_Driver/src/misc.c",
+        "hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c",
+        "hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.c",
+        "hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_exti.c",
+        "hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c",
+        "hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c",
+        "hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.c",
+        "hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c",
+        "hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c",
+        "hal/STM32F10x_StdPeriph_Driver/system_stm32f10x.c",
+        "src/Module/ADC.c",
+        "src/Module/Delay.c",
+        "src/Module/Encoder.c",
+        "src/Module/IC.c",
+        "src/Module/IIC.c",
+        "src/Module/OLED.c",
+        "src/Module/TestPWM.c",
+        "src/Module/WaveDisplay.c",
+        "src/main.c",
+        "src/startup_stm32f10x_md.s",
+        "src/stm32f10x_it.c"
+    ],
+    "alwaysInBuildSources": [],
+    "sourceParams": {},
+    "options": {
+        "version": 5,
+        "beforeBuildTasks": [],
+        "afterBuildTasks": [],
+        "global": {
+            "$float-abi-type": "softfp",
+            "output-debug-info": "enable",
+            "misc-control": "--specs=nosys.specs --specs=nano.specs",
+            "toolPrefix": "arm-none-eabi-",
+            "microcontroller-cpu": "cortex-m3",
+            "microcontroller-fpu": "cortex-m3",
+            "microcontroller-float": "cortex-m3",
+            "$arch-extensions": "",
+            "$clang-arch-extensions": "",
+            "$armlink-arch-extensions": ""
+        },
+        "c/cpp-compiler": {
+            "language-c": "c11",
+            "language-cpp": "c++11",
+            "optimization": "level-debug",
+            "warnings": "all-warnings",
+            "one-elf-section-per-function": true,
+            "one-elf-section-per-data": true,
+            "C_FLAGS": "",
+            "CXX_FLAGS": ""
+        },
+        "asm-compiler": {
+            "ASM_FLAGS": ""
+        },
+        "linker": {
+            "output-format": "elf",
+            "remove-unused-input-sections": true,
+            "LD_FLAGS": "",
+            "LIB_FLAGS": "-lm",
+            "$toolName": "gcc",
+            "link-scatter": [
+                "d:/01_EGGER/program/STM32Project/Mini_Oscilloscope/stm32f1x_64KB_flash.ld"
+            ]
+        }
+    },
+    "env": {
+        "workspaceFolder": "d:\\01_EGGER\\program\\STM32Project\\Mini_Oscilloscope",
+        "workspaceFolderBasename": "Mini_Oscilloscope",
+        "OutDir": "d:\\01_EGGER\\program\\STM32Project\\Mini_Oscilloscope\\build\\Debug",
+        "OutDirRoot": "build",
+        "OutDirBase": "build\\Debug",
+        "ProjectName": "Mini_Oscilloscope",
+        "ConfigName": "Debug",
+        "ProjectRoot": "d:\\01_EGGER\\program\\STM32Project\\Mini_Oscilloscope",
+        "ExecutableName": "d:\\01_EGGER\\program\\STM32Project\\Mini_Oscilloscope\\build\\Debug\\Mini_Oscilloscope",
+        "ChipPackDir": "",
+        "ChipName": "STM32F102C8",
+        "SYS_Platform": "win32",
+        "SYS_DirSep": "\\",
+        "SYS_DirSeparator": "\\",
+        "SYS_PathSep": ";",
+        "SYS_PathSeparator": ";",
+        "SYS_EOL": "\r\n",
+        "EIDE_BUILDER_DIR": "c:\\Users\\chi62\\.vscode\\extensions\\cl.eide-3.23.1\\res\\tools\\win32\\unify_builder",
+        "EIDE_BINARIES_VER": "12.0.1",
+        "EIDE_MSYS": "C:\\Users\\chi62\\.eide\\bin\\builder\\msys\\bin",
+        "ToolchainRoot": "C:\\Users\\chi62\\.eide\\tools\\gcc_arm"
+    },
+    "sysPaths": []
+}

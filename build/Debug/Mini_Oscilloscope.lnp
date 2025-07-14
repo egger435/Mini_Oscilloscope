@@ -1,0 +1,23 @@
+-mthumb -mcpu=cortex-m3 -T d:/01_EGGER/program/STM32Project/Mini_Oscilloscope/stm32f1x_64KB_flash.ld -Wl,--gc-sections -Wl,--print-memory-usage --specs=nosys.specs --specs=nano.specs
+-Wl,-Map=./build/Debug/Mini_Oscilloscope.map
+-o ./build/Debug/Mini_Oscilloscope.elf ./build/Debug/.obj/hal/STM32F10x_StdPeriph_Driver/src/misc.o
+./build/Debug/.obj/hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.o
+./build/Debug/.obj/hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.o
+./build/Debug/.obj/hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_exti.o
+./build/Debug/.obj/hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.o
+./build/Debug/.obj/hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.o
+./build/Debug/.obj/hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.o
+./build/Debug/.obj/hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.o
+./build/Debug/.obj/hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.o
+./build/Debug/.obj/hal/STM32F10x_StdPeriph_Driver/system_stm32f10x.o
+./build/Debug/.obj/src/Module/ADC.o
+./build/Debug/.obj/src/Module/Delay.o
+./build/Debug/.obj/src/Module/Encoder.o
+./build/Debug/.obj/src/Module/IC.o
+./build/Debug/.obj/src/Module/IIC.o
+./build/Debug/.obj/src/Module/OLED.o
+./build/Debug/.obj/src/Module/TestPWM.o
+./build/Debug/.obj/src/Module/WaveDisplay.o
+./build/Debug/.obj/src/main.o
+./build/Debug/.obj/src/startup_stm32f10x_md.o
+./build/Debug/.obj/src/stm32f10x_it.o -lm

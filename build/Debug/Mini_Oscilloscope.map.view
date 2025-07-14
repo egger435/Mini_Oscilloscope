@@ -1,0 +1,3 @@
+tool: GCC
+fileName: Mini_Oscilloscope.map
+elfName: Mini_Oscilloscope.elf
