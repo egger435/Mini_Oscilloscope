@@ -23,10 +23,11 @@ void PWM_INIT()
     TIM_OCInitTypeDef TIM_OCInitStructure;
     TIM_OCInitStructure.TIM_OCMode = TIM_OCMode_PWM1;
     TIM_OCInitStructure.TIM_OutputState = TIM_OutputState_Enable;
-    TIM_OCInitStructure.TIM_Pulse = 15; // 占空比25%
+    TIM_OCInitStructure.TIM_Pulse = 15; // 占空比75%
     TIM_OCInitStructure.TIM_OCPolarity = TIM_OCPolarity_High;
     TIM_OC3Init(TIM1, &TIM_OCInitStructure);
 
     TIM_Cmd(TIM1, ENABLE);
     TIM_CtrlPWMOutputs(TIM1, ENABLE);
+
 }
